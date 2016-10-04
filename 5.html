@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta name="renderer" content="Webkit">
+	<meta name="author" content="laiyuquan">
+	<meta name="Keywords" content="bootstrap">
+	<meta name="description" content="bootstrap知识">
+
+	<title>学习Bootstrap5</title>
+
+	<!-- <link rel="icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	
+	<script src="./js/jquery-1.12.3.min.js"> </script> 
+	<script src="./js/bootstrap.min.js"> </script>
+
+ <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+	 body {
+	padding-top: 50px;
+    padding-left: 50px;
+}
+</style>
+
+</head>
+
+<body class='container'>
+<!-- 	<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+<h2>h2. Bootstrap heading <span class='small'>Secondary text</span></h2>
+<h3>h3. Bootstrap heading <large>Secondary text</large></h3>
+<h4>h4. Bootstrap heading</h4>
+<h5>h5. Bootstrap heading</h5>
+<h6>h6. Bootstrap heading <large>Secondary text</large></h6>
+
+<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+</p>
+
+<p class='lead'>Maecenas sed di <i>laiyuquan</i> am eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+</p>
+
+<p>You <em>rendered as italicized text</em>can use<strong>rendered as bold text</strong> the mark tag to <mark>highlight</mark> text.</p>
+
+<p><del>This line of <b>laiyuquan</b>text is meant to be treated as deleted text.</del></p>
+
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+
+<p><u>This line of text will render as underlined</u></p>
+
+
+<p class="text-left">Left alignedasdd text.</p>
+<p class="text-center">Center adasdligned text.</p>
+<p class="text-right">Right alidasdgned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+
+
+<p><abbr title="attribute">attr</abbr></p>
+<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+<p><abbr title="HyperText Markup Language" >HTML</abbr></p>
+
+<address>
+  <strong>Twitter, Inc.</strong><br>
+  795 Folsom Ave, Suite 600<br>
+  San Francisco, CA 94107<br>
+  <abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+  <strong>Full Name</strong><br>
+  <a href="mailto:#">first.last@example.com</a>
+</address>
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+<blockquote class='blockquote-reverse'>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+
+ <footer class="navbar-fixed-bottom label-info text-center"><strong>Someone famous in <cite title="Source Title">Source Title</cite></strong></footer> -->
+
+
+
+<!-- 列表功能-->
+<!-- <ul>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetur adipiscing elit</li>
+	<li>Lorem ipsum dolor sit amet</li>
+		<ul>
+			<li>laiyuquan</li>
+			<li>laiyuquan</li>
+			<li>laiyuquan</li>
+		</ul>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetur adipiscing elit</li>
+</ul>
+
+<ol >
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+</ol>
+
+<ol class="list-inline">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+</ol>
+
+<br/><br/>
+<ul class="list-unstyled">
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetur adipiscing elit</li>
+	<li>Lorem ipsum dolor sit amet</li>
+		<ul >
+			<li>laiyuquan</li>
+			<li>laiyuquan</li>
+			<li>laiyuquan</li>
+		</ul>
+	<li>Lorem ipsum dolor sit amet</li>
+	<li>Consectetur adipiscing elit</li>
+</ul>
+
+<ol class="list-unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Lorem ipsum dolor sit amet</li>
+</ol>
+
+<dl>
+  <dt>Description lists</dt>
+  	<dd>A description list is perfect for defining terms</dd>
+  <dt>Description lists</dt>
+  	<dd>A description list is perfect for defining terms</dd>
+</dl>
+
+<dl class="dl-horizontal">
+  <dt>Description lists</dt>
+  	<dd>A description list is perfect for defining terms</dd>
+  <dt>Description lists</dt>
+  	<dd>A description list is perfect for defining terms</dd>
+</dl> -->
+
+
+<!-- <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+
+<p> To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+</p>
+
+<p><pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre></p>
+
+<p>y = mx + b</p>
+
+<p> <var>y</var> = <var>m</var><var>x</var> + <var>b</var> </p>
+
+<p><samp>This text is meant to be treated as sample output from a computer program.</samp>
+</p>
+
+<div class="table-responsive">  响应式表单
+	<table class="table table-striped table-bordered table-hover">
+	  <th>#</th>
+	  <th>First Name</th>
+	  <th>Last Name</th>
+	  <th>Username</th>
+	  <tr class="active">
+	  	<td>1</td>
+		<td>Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+	  <tr class="success">
+	  	<td>1</td>
+		<td>Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+	  <tr class="warning">
+	  	<td>1</td>
+		<td class="danger">Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+	  <tr class="danger">
+	  	<td>1</td>
+		<td>Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+	  <tr class="info">
+	  	<td>1</td>
+		<td>Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+	  <tr>
+	  	<td>1</td>
+		<td>Mark</td>
+		<td>Otto</td>
+		<td>@mdo</td>
+	  </tr>
+
+	</table>
+</div>
+
+-->
+<!-- <form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> <br> 
+<br>
+
+<form role="form" class='form-horizontal'>
+	<div class="form-group">
+		<label class="col-sm-2 control-label" >Email</label>
+		<div class="col-sm-10 ">
+			<input type="email"  class="form-control" placeholder="Enter email">
+		</div>
+	</div>
+	 <div class="form-group">
+	    <label class="col-sm-2 control-label" for="exampleInputPassword1">Password</label>
+	    <div class="col-sm-10">
+	    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	    </div>
+	 </div>
+	 <div class="form-group">
+	 	<div class="col-sm-10 col-sm-offset-2">
+	 	    <label for="exampleInputFile">File input</label>
+		    <input type="file" id="exampleInputFile">
+		    <p class="help-block">Example block-level help text here.</p>
+		 </div>
+	 </div>
+	 <div class="form-group">
+	 	<div class="col-sm-10 col-sm-offset-2">
+		   <label>
+		      <input type="checkbox"> Check me out
+		    </label>
+		 </div>
+	 </div>
+	
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</div>
+	</div>
+</form> -->
+
+<!-- <div class='row'>
+	<div class="col-sm-4 ">
+	<form role="form">
+		<div class="form-group   ">
+			<label >登录名</label>
+			<input type="text" class='form-control ' placeholder="登录名" >
+			
+		</div>
+	</div>
+	<div class="col-sm-4 ">
+		<div class="form-group has-warning">
+			<label for="">登录密码</label>
+			<input type="password" class='form-control' placeholder="登录密码" >
+		</div>
+	</div>
+		<div class="col-sm-4 ">
+		<div class="form-group has-error">
+			<label for="">真实姓名</label>
+			<input type="password" class='form-control input-sm' placeholder="真实姓名" >
+		</div>
+	</div>
+	</form>
+</div>
+
+
+<form>
+	<div class="form-group">
+		<input type="text" class='form-control' placeholder="文本框" >
+	</div>
+	<div class="form-group">
+		<textarea class='form-control' rows='4'>文本域</textarea> 
+	</div>
+
+	复选框
+	<div class="checkbox has-error">
+		<label >
+			   <input type="checkbox" value="">
+    			Option one is this and that&mdash;be sure to include why it's great
+		</label>
+	</div>
+	<div class="checkbox disabled">
+		<label >
+			   <input type="checkbox" value="" disabled>
+    			Option one is this and that&mdash;be sure to include why it's great
+		</label>
+	</div>
+
+	<div class='has-error'>
+		<div class="checkbox">
+			<label >
+				   <input type="checkbox" value="">
+	    			Option one is this and that&mdash;be sure to include why it's great
+			</label>
+		</div>
+	</div>
+
+	单选
+	<div class=" radio-inline">
+		<label >
+			   <input type="radio" name='lai' value="" value='option1 ' checked>
+    			Option one is this and
+		</label>
+	</div>
+	<div class=" radio-inline">
+		<label >
+			   <input type="radio"  name='lai' value="" value='option2'>
+    			Option one 
+		</label>
+	</div>
+
+	<div class="radio-inline">
+		<label >
+			   <input type="radio" name='lai' value="" value='option3'>
+    			Option one 
+		</label>
+	</div>
+
+	<div class='form-group'>
+		<label for=""> 选择标签</label>
+		<select  class="form-control ">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+		</select>
+	</div>
+
+
+
+	<div class="row">
+	  <div class="col-xs-2">
+	    <input type="text" class="form-control" placeholder=".col-xs-2">
+	  </div>
+	  <div class="col-xs-3">
+	    <input type="text" class="form-control" placeholder=".col-xs-3">
+	  </div>
+	  <div class="col-xs-4">
+	    <input type="text" class="form-control" placeholder=".col-xs-4">
+	  </div>
+	</div>
+</form>
+<br>
+
+Standard button
+<button type="button" class="btn btn-default btn-lg">Default</button>
+
+Provides extra visual weight and identifies the primary action in a set of buttons
+<button type="button" class="btn btn-primary">Primary</button>
+
+Indicates a successful or positive action
+<button type="button" class="btn btn-success btn-sm">Success</button>
+
+Contextual button for informational alert messages
+<button type="button" class="btn btn-info btn-xs">Info</button>
+
+Indicates caution should be taken with this action
+<button type="button" class="btn btn-warning">Warning</button>
+
+Indicates a dangerous or potentially negative action
+<button type="button" class="btn btn-danger btn-block">Danger</button>
+
+Deemphasize a button by making it look like a link while maintaining button behavior
+<button type="button" class="btn btn-link">Link</button>
+
+<a href=""  class='btn btn-primary btn-lg disabled'> a标签 变按钮</a>
+<a href=""  class='btn btn-primary btn-lg '> a标签 变按钮</a>
+
+<div class="row">
+	<div class='col-sm-4' ><img src="./1.jpg" alt="" class='img-responsive img-rounded'></div>
+	<div class='col-sm-4' ><img src="./1.jpg" alt="" class='img-responsive img-circle'></div>
+	<div class='col-sm-4' ><img src="./1.jpg" alt="" class='img-responsive img-thumbnail'></div>
+</div> -->
+
+
+<!-- <p class="text-muted">laiyuquan</p>
+<p class="text-primary">laiyuquan</p>
+<p class="text-success">laiyuquan</p>
+<p class="text-info">laiyuquan</p>
+<p class="text-warning">laiyuquan</p>
+<p class="text-danger">laiyuquan</p>
+
+<p class="bg-primary">laiyuquan</p>
+<p class="bg-success">laiyuquan</p>
+<p class="bg-info">laiyuquan</p>
+<p class="bg-warning">laiyuquan</p>
+<p class="bg-danger">laiyuquan</p> -->
+
+
+
+
+<!-- <button type='button' class='close'>
+	<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+</button>
+<span class="caret"></span>
+<br>
+
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star"></span> Star
+</button>
+
+
+
+<div  style='margin-left:50p;margin-left:50px;'>
+	<span class="glyphicon glyphicon-star"></span>
+	<div class='dropdown'>
+		<button class='btn btn-default dropdown-toggle' type="button" id='dropdownMenu1' data-toggle="dropdown">
+			<span class="glyphicon glyphicon-star"></span>
+			Dropdown
+			<span class='caret'></span>
+		</button>
+		<ul class='dropdown-menu' role='menu' aria-labelledby="dropdownMenu1" >
+			<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+			<li role="presentation" class="divider"></li>
+		    <li role="presentation"  class="disabled"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+		    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+		</ul>
+	</div>
+</div><br>
+
+<div class='btn-group'>
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<div class='btn-group btn-group-lg'>
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+
+<div class='btn-group-vertical'>
+	<button type='button' class='btn btn-default'>1</button>
+	<button type='button' class='btn btn-default'>2</button>
+
+	<div class="btn-group">
+		<button type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown'>
+			Dropdown
+			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+	      <li><a href="#">Dropdown link</a></li>
+	      <li><a href="#">Dropdown link</a></li>
+	    </ul>
+	</div>
+
+</div>
+
+
+<div class="btn-group btn-group-justified">
+	<a type='button' class='btn btn-default'>1</a>
+	<a type='button' class='btn btn-default'>2</a>
+
+	<div class="btn-group">
+		<a type='button' class='btn btn-default dropdown-toggle' data-toggle='dropdown' >
+		3<span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+		      <li><a href="#">Dropdown link</a></li>
+		      <li><a href="#">Dropdown link</a></li>
+		    </ul>
+	</div>
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Anoctionther a</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+   <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div><br><br>
+
+<div class='input-group'>
+	<span class='input-group-addon'>@</span>
+	<input type="text" class="form-control" placeholder="Username">
+</div>
+
+<div class="input-group">
+  <input type="text" class="form-control">
+  <span class="input-group-addon">.00</span>
+</div>
+
+
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control">
+  <span class="input-group-addon">.00</span>
+</div><br><br>
+
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox">
+      </span>
+      <input type="text" class="form-control">
+    </div>/input-group
+  </div>/.col-lg-6
+  <div class="col-sm-6">
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio">
+      </span>
+      <input type="text" class="form-control">
+    </div>/input-group
+  </div>/.col-lg-6
+</div>/.row
+
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>/btn-group
+      <input type="text" class="form-control">
+    </div>/input-group
+  </div>/.col-lg-6
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>/btn-group
+    </div>/input-group
+  </div>/.col-lg-6
+</div>/.row <<br><br>
+
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" ><a href="#">Home</a></li>
+  <li role="presentation" class="active"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+Button trigger modal
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+Modal
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        321321321312321
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Project name</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
+				<li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
+				<li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
+			</ul>
+		</div>/.nav-collapse
+	</div>/.container
+</div>
+
+<button type="button" class="btn btn-primary btn-lg"  style="text-shadow: black 5px 3px 3px;font-size:50px;">
+  <span class="glyphicon glyphicon-time"></span> User
+</button>
+
+
+
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">主题
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">Java</a>
+        </li>
+        <li role="presentation" class="disabled">
+            <a role="menuitem"  tabindex="-1" href="#">数据挖掘</a>
+        </li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+        </li>
+        <li role="presentation" class="divider"></li>
+        <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+        <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+        </li>
+    </ul>
+</div> -->
+
+<!-- <div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox"></span>
+                    <input type="text" class="form-control">
+                </div>/input-group
+            </div>/.col-lg-6
+            <br>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <span> GO!</span>
+                    <input type="text" class="form-control">
+                </div>/input-group
+            </div>/.col-lg-6
+        </div>/.row
+    </form>
+</div>
+
+
+<div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                    <input type="text" class="form-control">
+                </div>/input-group
+            </div>/.col-lg-6
+            <br>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>/input-group
+            </div>/.col-lg-6
+        </div>/.row
+    </form>
+</div>
+
+
+
+<div style="padding: 100px 100px 10px;">
+    <form class="bs-example bs-example-form" role="form">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default 
+                        dropdown-toggle" data-toggle="dropdown">下拉菜单
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">功能</a>
+                            </li>
+                            <li>
+                                <a href="#">另一个功能</a>
+                            </li>
+                            <li>
+                                <a href="#">其他</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">分离的链接</a>
+                            </li>
+                        </ul>
+                    </div>/btn-group
+                    <input type="text" class="form-control">
+                </div>/input-group
+            </div>/.col-lg-6
+            <br>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default 
+                        dropdown-toggle" data-toggle="dropdown">下拉菜单
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="#">功能</a>
+                            </li>
+                            <li>
+                                <a href="#">另一个功能</a>
+                            </li>
+                            <li>
+                                <a href="#">其他</a>
+                            </li>
+                           		 <li class="divider"></li>
+                            <li>
+                                <a href="#">分离的链接</a>
+                            </li>
+                        </ul>
+                    </div>/btn-group
+                </div>/input-group
+            </div>/.col-lg-6
+        </div>/.row
+    </form>
+</div> -->
+
+
+<!-- 
+	<p>标签式的导航菜单</p>
+	<ul class="nav nav-pills ">
+	  <li class="active"><a href="http://www.baidu.com">Home</a></li>
+	  <li><a href="#">SVN</a></li>
+	  <li><a href="#">iOS</a></li>
+	  <li class="disabled"><a href="http://www.baidu.com">VB.Net</a></li>
+	  <li><a href="#">Java</a></li>
+	  <li><a href="#">PHP</a></li>
+	</ul> -->
+
+
+
+<!-- <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">菜鸟教程</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav> -->
+
+
+
+<!-- 
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid"> 
+	    <div class="navbar-header">
+	        <a class="navbar-brand" href="#">菜鸟教程</a>
+	    </div>
+	    <div>
+	        <form class="navbar-form navbar-left" role="search">
+	            <div class="form-group">
+	                <input type="text" class="form-control" placeholder="Search">
+	            </div>
+	            <button type="submit" class="btn btn-default">提交</button>
+	        </form>
+	    </div>
+    </div>
+</nav>
+
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">菜鸟教程</a>
+    </div>
+    <div>
+        向左对齐
+        <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+            <button type="submit" class="btn btn-default">
+                向左对齐-提交按钮
+            </button>
+        </form>
+        <p class="navbar-text navbar-left">向左对齐-文本</p>
+        向右对齐
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <button type="submit" class="btn btn-default">
+                向右对齐-提交按钮
+            </button>
+        </form>
+        <p class="navbar-text navbar-right">向右对齐-文本</p>
+    </div>
+    </div>
+</nav>
+
+
+
+<nav class="navbar navbar-default  " role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">菜鸟教程</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav> -->
+
+
+<!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+
+        <a class="navbar-brand" href="#">菜鸟教程</a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class='collapse navbar-collapse' id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+</nav>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">菜鸟教程</a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">iOS</a></li>
+            <li><a href="#">SVN</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Java <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">jmeter</a></li>
+                    <li><a href="#">EJB</a></li>
+                    <li><a href="#">Jasper Report</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">分离的链接</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">另一个分离的链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav> -->
+
+
+
+<!-- <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">2013</a></li>
+    <li class="active">十一月</li>
+</ol>
+
+
+<span class="label label-default">默认标签</span>
+<span class="label label-primary">主要标签</span>
+<span class="label label-success">成功标签</span>
+<span class="label label-info">信息标签</span>
+<span class="label label-warning">警告标签</span>
+<span class="label label-danger">危险标签</span>
+
+
+<a href="#">Mailbox <span class="badge">50</span></a>
+
+
+<h4>胶囊式导航中的激活状态</h4>
+<ul class="nav nav-pills">
+    <li class="active">
+        <a href="#">首页
+            <span class="badge">42</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">简介</a>
+    </li>
+    <li>
+        <a href="#">消息
+            <span class="badge">3</span>
+        </a>
+    </li>
+</ul>
+<br>
+<h4>列表导航中的激活状态</h4>
+<ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+    <li class="active">
+        <a href="#">
+            <span class="badge pull-right">42</span>首页</a>
+        </li>
+    <li>
+        <a href="#">简介</a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="badge pull-right">3</span>消息
+        </a>
+    </li>
+</ul> -->
+
+
+<!-- <div class="container">
+   <div class="jumbotron">
+        <h1>欢迎登陆页面！</h1>
+        <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+        <p><a class="btn btn-primary btn-lg" role="button">
+        学习更多</a>
+      </p>
+   </div>
+</div> -->
+
+
+<!-- <div class="page-header">
+    <h1>页面标题实例
+        <small>子标题</small>
+    </h1>
+</div>
+<p>这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。这是一个示例文本。</p>
+
+
+
+
+<div class="alert alert-success">成功！很好地完成了提交。</div>
+<div class="alert alert-info">信息！请注意这个信息。</div>
+<div class="alert alert-warning">警告！请不要提交。</div>
+<div class="alert alert-danger">错误！请进行一些更改。</div>
+
+
+<div class='alert alert-success alert-dismissable'>
+    <button type="button" class="close" data-dismiss="alert"aria-hidden="true">&times;</button>
+ 	成功！很好地完成了提交。
+</div>
+
+<div class="alert alert-info alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    信息！请注意这个信息。
+</div>
+
+<div class="alert alert-warning alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    警告！请不要提交。
+</div>
+
+<div class="alert alert-danger alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    错误！请进行一些更改。
+</div>	 -->
+
+
+
+
+<!-- <div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert"
+            aria-hidden="true">
+        &times;
+    </button>
+    <a href="http://www.baidu.com" class="alert-link">成功！很好地完成了提交。</a>
+</div>
+
+<div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" 
+        aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+        <span class="sr-only">40% 完成</span>
+    </div>
+</div>
+
+<div class="media">
+	<a class="pull-left" href="#">
+		<img class="media-object" src="/wp-content/uploads/2014/06/64.jpg"
+		alt="媒体对象">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading">媒体标题</h4>
+		这是一些示例文本。这是一些示例文本。
+		这是一些示例文本。这是一些示例文本。
+		这是一些示例文本。这是一些示例文本。
+		这是一些示例文本。这是一些示例文本。
+		这是一些示例文本。这是一些示例文本。
+	</div>
+</div>
+
+<ul class="list-group">
+    <li class="list-group-item">免费域名注册</li>
+    <li class="list-group-item">免费 Window 空间托管</li>
+    <li class="list-group-item">图像的数量</li>
+    <li class="list-group-item"><span class="badge">新</span>24*7 支持</li>
+    <li class="list-group-item">每年更新成本</li>
+</ul>
+
+<a href="#" class="list-group-item active">
+    免费域名注册
+</a>
+<a href="#" class="list-group-item">24*7 支持</a>
+<a href="#" class="list-group-item">免费 Window 空间托管</a>
+<a href="#" class="list-group-item">图像的数量</a>
+<a href="#" class="list-group-item">每年更新成本</a>
+
+
+
+<button class="btn btn-primary btn-lg"  href="./5.html" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+模态框（Modal）
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+            </div>
+            <div class="modal-body" >s626262626d</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" id="sub" class="btn btn-primary">提交更改</button>
+            </div>
+        </div>/.modal-content
+    </div>/.modal
+</div> -->
+
+<!-- <ul id="myTab" class="nav nav-pills">
+    <li class="active">
+        <a href="#home" data-toggle="tab">
+            W3Cschool Home
+        </a>
+    </li>
+    <li><a href="#ios" data-toggle="tab">iOS</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown">Java
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+            <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+        </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+    <div class="tab-pane fade" id="jmeter">
+        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+    </div>
+    <div class="tab-pane fade" id="ejb">
+        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+        </p>
+    </div>
+</div>
+
+
+<hr>
+<p class="active-tab"><strong>激活的标签页</strong>：<span></span></p>
+<p class="previous-tab"><strong>前一个激活的标签页</strong>：<span></span></p>
+<hr>
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">
+            W3Cschool Home</a></li>
+    <li><a href="#ios" data-toggle="tab">iOS</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle"
+           data-toggle="dropdown">
+            Java <b class="caret"></b></a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+            <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>
+            <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>
+        </ul>
+    </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
+            TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+    </div>
+    <div class="tab-pane fade" id="jmeter">
+        <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+    </div>
+    <div class="tab-pane fade" id="ejb">
+        <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
+        </p>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            // 获取已激活的标签页的名称
+            var activeTab = $(e.target).text();
+            // 获取前一个激活的标签页的名称
+            var previousTab = $(e.relatedTarget).text();
+            $(".active-tab span").html(activeTab);
+            $(".previous-tab span").html(previousTab);
+        });
+    });
+</script>
+
+<a href="#" data-toggle="tooltip" title="Example tooltip">请悬停在我的上面</a>
+
+<button type="button" class="btn btn-default" data-toggle="tooltip"  data-placement="right" title="默认2323的 Tooltip"> 默认的 Tooltip</button>
+
+
+<hr>
+
+<button type='button' id="btn" class='btn btn-primary'>弹出框</button>
+
+<div class="alert alert-warning">
+    <strong>警告！</strong>您的网络连接有问题。
+</div>
+<hr> -->
+
+
+
+
+
+<!-- <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-default">
+        <input type="checkbox"> 选项 1
+    </label>
+    <label class="btn btn-default">
+        <input type="checkbox"> 选项 2
+    </label>
+    <label class="btn btn-default">
+        <input type="checkbox"> 选项 3
+    </label>
+</div>
+
+
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option1"> 选项 1
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option2"> 选项 2
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3"> 选项 3
+    </label>
+</div> -->
+
+<!-- <button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..." 
+    type="button"> 加载状态
+</button>
+
+
+<button type="button" class="btn btn-primary" 
+    data-toggle="button"> 单个切换
+</button>
+
+
+<h2>点击每个按钮查看方法效果</h2>
+<h4>演示 .button('toggle') 方法</h4>
+<div id="myButtons1" class="bs-example">
+    <button type="button" class="btn btn-primary">原始</button>
+</div>
+
+<h4>演示 .button('loading') 方法</h4>
+<div id="myButtons2" class="bs-example">
+    <button type="button" class="btn btn-primary" 
+        data-loading-text="Loading...">原始
+    </button>
+</div>
+
+<h4>演示 .button(string) 方法</h4>
+<button type="button" class="btn btn-primary" id="myButton4" 
+    data-complete-text="Loading finished">请点击我
+</button>
+
+<script>
+	$(function(){
+	        $("#myButton4").click(function(){
+        $(this).button('loading').delay(1000).queue(function() {
+            $(this).button('reset');
+        });        
+    });
+
+
+        $("#myButtons2 .btn").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+            	$(this).button('complete');
+            });        
+        });
+
+
+		$('#myButtons1').click(function(){
+			$(this).button('toggle');
+		})
+
+		$('#fat-btn').click(function(){
+			$(this).button('loading').delay(1000).queue(function(){
+				//这里可以执行一系列的动作
+
+				$(this).button('reset');
+			})
+		})
+	})
+</script> -->
+
+
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseOne">
+                点击我进行展开，再次点击我进行折叠。第 1 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+                vice lomo.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseTwo">
+                点击我进行展开，再次点击我进行折叠。第 2 部分
+            </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+            vice lomo.
+        </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseThree">
+                点击我进行展开，再次点击我进行折叠。第 3 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+                vice lomo.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="collapse" 
+    data-target="#demo">
+    简单的可折叠组件
+</button>    
+<div id="demo" class="collapse in">
+    Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+    vice lomo.
+</div>
+
+
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active" style='width:280px;height:500px;'>
+            <img src="./1.jpg" alt="First slide" >
+            <div class="carousel-caption">标题 1</div>
+        </div>
+        <div class="item" style='width:280;height:500px;'>
+            <img src="./4.png" alt="Second slide" >
+            <div class="carousel-caption">标题 2</div>
+        </div>
+        <div class="item"  style='width:280;height:500px;'>
+            <img src="./3.png" alt="Third slide" >
+            <div class="carousel-caption">标题 3</div>
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel" 
+        data-slide="prev">&lsaquo;
+    </a>
+    <a class="carousel-control right" href="#myCarousel" 
+        data-slide="next">&rsaquo;
+    </a>
+</div>
+
+
+</body>
+</html>
+
+
